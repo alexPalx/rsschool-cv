@@ -31,3 +31,19 @@ function isPalindrome(str) {
     return true;
 }
 ```
+
+
+### Work Experience
+
+No experience in IT.
+
+
+### Education
+
+Secondary special education, Minsk State Energy College, heating engineer.
+As well as various starter courses and books on HTML, CSS, JavaScript, C#, and more.
+
+### Language
+
+- Russian, Belarusian - Native
+- English - A1
