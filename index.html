@@ -2,17 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Aliaksei Paliukhovich's CV</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
 </head>
-<body>
-    <main>
-        <section>
-            <h2>Some heading</h2>
-            <p>Some text</p>
-        </section>
+<body class="body_container">
+    <header>
+        <div class="header_image">
+            <p>there should be<br>a photo here,<br>but I have no<br>good shots</p>
+        </div>
+        <p class="header_text">Aliaksei Paliukhovich</p>
+        <p class="header_text">future front-end developer</p>
+    </header>
+    <main class="main_content_container">
+        <div class="main_content_container_column left_column">
+            <section>
+                <h2>contact</h2>
+                <ul>
+                    <li title="Phone number">+375(44)701-20-23 <i class="fas fa-phone"></i></li>
+                    <li title="Email">alex.teanow@gmail.com <i class="fas fa-envelope"></i></li>
+                    <li title="Discord">heh#3294 <i class="fab fa-discord"></i></li>
+                </ul>
+            </section>
+            <section>
+                <h2>skills</h2>
+                <ul>
+                    <li>HTML<ul class="list_icons">
+                        <li><i class="fas fa-square"></i></li>
+                        <li><i class="fas fa-square"></i></li>
+                        <li><i class="fas fa-square"></i></li>
+                        <li><i class="fas fa-square"></i></li>
+                        <li><i class="far fa-square"></i></li>
+                    </ul></li>
+                    <li>CSS<ul class="list_icons">
+                        <li><i class="fas fa-square"></i></li>
+                        <li><i class="fas fa-square"></i></li>
+                        <li><i class="fas fa-square"></i></li>
+                        <li><i class="far fa-square"></i></li>
+                        <li><i class="far fa-square"></i></li>
+                    </ul></li>
+                    <li>JavaScript<ul class="list_icons">
+                        <li><i class="fas fa-square"></i></li>
+                        <li><i class="fas fa-square"></i></li>
+                        <li><i class="far fa-square"></i></li>
+                        <li><i class="far fa-square"></i></li>
+                        <li><i class="far fa-square"></i></li>
+                    </ul></li>
+                    <li>C#<ul class="list_icons">
+                        <li><i class="fas fa-square"></i></li>
+                        <li><i class="fas fa-square"></i></li>
+                        <li><i class="far fa-square"></i></li>
+                        <li><i class="far fa-square"></i></li>
+                        <li><i class="far fa-square"></i></li>
+                    </ul></li>
+                    <li>Git and GitHub<ul class="list_icons">
+                        <li><i class="fas fa-square"></i></li>
+                        <li><i class="fas fa-square"></i></li>
+                        <li><i class="far fa-square"></i></li>
+                        <li><i class="far fa-square"></i></li>
+                        <li><i class="far fa-square"></i></li>
+                    </ul></li>
+                </ul>
+            </section>
+            <section>
+                <h2>education</h2>
+                <ul>
+                    <li>Secondary special education,<br>Minsk State Energy College,<br>heating engineer.</li>
+                    <li>As well as various starter courses and<br>books on HTML, CSS, JavaScript, C#,<br>and more.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>language</h2>
+                <ul>
+                    <li>Russian - native</li>
+                    <li>Belarusian - native</li>
+                    <li>English - beginner</li>
+                </ul>
+            </section>
+        </div>
+        <div class="main_content_container_column">
+            <section>
+                <h2>about me</h2>
+                <p>Hello. My name is Alexei, I am 21 years old, I live in Minsk, Belarus. I love programming for a very long time. However, it was not possible to get the desired education for certain reasons. Therefore, I am engaged in self-education. During the time of self-study, I managed to make several prototypes of games on Unity, the code of which I am ashamed to show people :) But I want to become a web developer, so I'm learning programming at <span class="text_bold">RS School!</span></p>
+            </section>
+            <section>
+                <h2>work experience</h2>
+                <p>No experience in IT.</p>
+            </section>
+            <section>
+                <h2>code example</h2>
+                <pre><code>
+function isPalindrome(str) {
+for (let i = 0; i &lt; str.length / 2; ++i)
+    if (str[i] !== str[str.length - i - 1]) return false;
+    return true;
+}</code></pre>
+            </section>
+        </div>
     </main>
+    <footer>
+        <div>
+            <p><a href="https://github.com/alexPalx"><i class="fab fa-github icon_github" style="font-size: 1.5em;"></i></a></p>
+        </div>
+        <div class="test">
+            <p>2021</p>
+        </div>
+        <div>
+            <p><a href="https://rs.school/js/"><img src="images/rs_school_logo.svg" width="65" alt="RS School logo"></a></p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a9d8f248eb.js" crossorigin="anonymous"></script>
 </body>
 </html>
