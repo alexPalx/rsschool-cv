@@ -52,10 +52,11 @@ body footer {
 }
 
 .main_content_container_column {
-  width: 400px;
+  width: 460px;
 }
 
 .main_content_container_column.left_column {
+  width: 460px;
   text-align: right;
 }
 
@@ -68,6 +69,12 @@ section h2 {
   font-size: 1.4em;
   font-weight: 500;
   margin: 10px;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: 5px;
 }
 
 .list_icons {
@@ -111,7 +118,8 @@ body footer div {
   width: 100px;
 }
 
-a {
+a,
+a:visited {
   font-variant: small-caps;
   text-decoration: none;
   color: #59619b
@@ -121,10 +129,55 @@ a:hover {
   color: #202b85;
 }
 
-a:visited {
-  color: #8968c2;
+.my-projects__wrapper {
+  flex-direction: column;
+
+  display: flex;
+
+  margin-left: 10px;
 }
 
-a:hover:visited {
-  color: #202b85;
+.my-projects__header {
+  width: 200px;
+}
+
+.my-projects__row {
+  display: flex;
+}
+
+.my-projects__item {
+  position: relative;
+
+  width: 200px;
+  height: 150px;
+}
+
+.my-projects__image {
+  transition: 0.25s;
+
+  border-radius: 10px;
+  width: 175px;
+  height: 117px;
+}
+
+.my-projects__link {
+  position: relative;
+}
+
+.my-projects__image:hover,
+.my-projects__item:last-child.my-projects__item__image:hover {
+  position: relative;
+  z-index: 10;
+
+  width: 350px;
+  height: 234px;
+  box-shadow: -6px 6px 5px #262a472d;
+}
+
+.my-projects__item:last-child .my-projects__image:hover {
+  margin-left: -175px;
+}
+
+.my-projects__row:last-child .my-projects__image:hover {
+  margin-top: -117px;
 }

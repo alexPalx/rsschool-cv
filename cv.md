@@ -25,12 +25,23 @@ Hello. My name is Alexei, I am 21 years old, I live in Minsk, Belarus. I love pr
 ### Code Example
 
 ``` JavaScript
-function isPalindrome(str) {
-    for (let i = 0; i < str.length / 2; ++i)
-        if (str[i] !== str[str.length - i - 1]) return false;
-    return true;
-}
+const towerBuilder = (floors, blockType = '*') => {
+    return (new Array(floors)).fill().map((_, i) =>
+        blockType
+            .repeat((i + 1) * 2 - 1)
+            .padStart(floors + i, ' ')
+            .padEnd(floors * 2 - 1, ' ')
+    );
+};
 ```
+
+
+### My projects
+
+- [Portfolio example<br>![Portfolio example](images/portfolio.jpg)](https://alexpalx.github.io/rss-stage0-projects/portfolio/)
+- [Audio player<br>![Audio player](images/audio-player.jpg)](https://alexpalx.github.io/rss-stage0-projects/audio-player/)
+- [Quote generator<br>![Quote generator](images/random-jokes.jpg)](https://alexpalx.github.io/rss-stage0-projects/random-jokes/)
+- [Strange game<br>![Strange game](images/random-game.jpg)](https://alexpalx.github.io/rss-stage0-projects/random-game/)
 
 
 ### Work Experience
@@ -46,4 +57,4 @@ As well as various starter courses and books on HTML, CSS, JavaScript, C#, and m
 ### Language
 
 - Russian, Belarusian - Native
-- English - A1
+- English - A2
